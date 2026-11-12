@@ -1,0 +1,10 @@
+.env
+.git
+.gitignore
+wandb/
+**/__pycache__/
+**/*.pyc
+**/*.pyo
+models/
+.venv/
+.ipynb_checkpoints/
