@@ -14,6 +14,13 @@ permissions:
 jobs:
   test:
     runs-on: ubuntu-latest
+
+    env:
+      MONGO_URL: ${{ secrets.MONGO_URL }}
+      WANDB_API_KEY: ${{ secrets.WANDB_API_KEY }}
+      WANDB_PROJECT: ${{ secrets.WANDB_PROJECT }}
+      WANDB_MODELS: ${{ secrets.WANDB_MODELS }}
+
     steps:
       - uses: actions/checkout@v4
 
